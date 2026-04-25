@@ -1,27 +1,27 @@
-import { HashRouter, NavLink, Route, Routes } from 'react-router-dom'
+import { HashRouter, NavLink, Route, Routes } from "react-router-dom";
 
 const navLinks = [
-  { to: '/', label: 'Home' },
-  { to: '/about', label: 'About Us' },
-  { to: '/contact', label: 'Contact' },
-  { to: '/privacy-policy', label: 'Privacy Policy' },
-  { to: '/terms-and-conditions', label: 'Terms & Conditions' },
-]
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About Us" },
+  { to: "/contact", label: "Contact" },
+  { to: "/privacy-policy", label: "Privacy Policy" },
+  { to: "/terms-and-conditions", label: "Terms & Conditions" },
+];
 
 const learningTracks = [
   {
-    title: 'Crypto Basics',
-    text: 'Understand blockchain, wallets, and the practical difference between coins and tokens.',
+    title: "Crypto Basics",
+    text: "Understand blockchain, wallets, and the practical difference between coins and tokens.",
   },
   {
-    title: 'Trading Fundamentals',
-    text: 'Learn spot markets, risk-reward planning, stop-loss usage, and beginner-friendly strategies.',
+    title: "Trading Fundamentals",
+    text: "Learn spot markets, risk-reward planning, stop-loss usage, and beginner-friendly strategies.",
   },
   {
-    title: 'Security First',
-    text: 'Master scam prevention, seed phrase protection, and practical steps to secure your funds.',
+    title: "Security First",
+    text: "Master scam prevention, seed phrase protection, and practical steps to secure your funds.",
   },
-]
+];
 
 function Layout({ children }) {
   return (
@@ -36,9 +36,9 @@ function Layout({ children }) {
             <NavLink
               key={link.to}
               to={link.to}
-              end={link.to === '/'}
+              end={link.to === "/"}
               className={({ isActive }) =>
-                isActive ? 'nav-link nav-link-active' : 'nav-link'
+                isActive ? "nav-link nav-link-active" : "nav-link"
               }
             >
               {link.label}
@@ -50,7 +50,10 @@ function Layout({ children }) {
       <main>{children}</main>
 
       <footer>
-        <p>Copyright {new Date().getFullYear()} Crypto Academy. All rights reserved.</p>
+        <p>
+          Copyright {new Date().getFullYear()} Crypto Academy. All rights
+          reserved.
+        </p>
         <div className="footer-links">
           <NavLink to="/privacy-policy">Privacy Policy</NavLink>
           <NavLink to="/terms-and-conditions">Terms & Conditions</NavLink>
@@ -58,7 +61,7 @@ function Layout({ children }) {
         </div>
       </footer>
     </div>
-  )
+  );
 }
 
 function HomePage() {
@@ -66,10 +69,10 @@ function HomePage() {
     <Layout>
       <section className="hero">
         <p className="badge">Learn. Protect. Grow.</p>
-        <h2>Start Your Crypto Journey with Clarity</h2>
+        <h2>Crypto Education Guide 2026</h2>
         <p>
-          We provide structured crypto education from beginner to advanced level so you can make informed decisions,
-          not emotional ones.
+          Learn the fundamentals of digital assets and blockchain technology.
+          Access our free comprehensive US learning module today.
         </p>
       </section>
 
@@ -83,10 +86,12 @@ function HomePage() {
       </section>
 
       <section className="info-banner">
-        <strong>Important Note:</strong> All content is for educational purposes only and does not constitute financial advice. Always do your own research before investing.
+        <strong>Important Note:</strong> All content is for educational purposes
+        only and does not constitute financial advice. Always do your own
+        research before investing.
       </section>
     </Layout>
-  )
+  );
 }
 
 function AboutPage() {
@@ -95,14 +100,17 @@ function AboutPage() {
       <section className="page-block">
         <h2>About Us</h2>
         <p>
-          Crypto Academy is built to make crypto learning practical, structured, and easy to understand. Our focus goes beyond theory and includes real-world use cases, risk management, and secure investing habits.
+          Crypto Academy is built to make crypto learning practical, structured,
+          and easy to understand. Our focus goes beyond theory and includes
+          real-world use cases, risk management, and secure investing habits.
         </p>
         <p>
-          Our team simplifies complex market concepts so beginners and intermediate learners can build confidence step by step.
+          Our team simplifies complex market concepts so beginners and
+          intermediate learners can build confidence step by step.
         </p>
       </section>
     </Layout>
-  )
+  );
 }
 
 function ContactPage() {
@@ -110,7 +118,10 @@ function ContactPage() {
     <Layout>
       <section className="page-block">
         <h2>Contact Us</h2>
-        <p>For training, support, or collaboration opportunities, contact us using the details below:</p>
+        <p>
+          For training, support, or collaboration opportunities, contact us
+          using the details below:
+        </p>
         <ul>
           <li>Email: support@cryptoacademy.com</li>
           <li>Phone: +92-300-1234567</li>
@@ -119,7 +130,7 @@ function ContactPage() {
         <p>Response time: 24 to 48 business hours.</p>
       </section>
     </Layout>
-  )
+  );
 }
 
 function PrivacyPage() {
@@ -129,18 +140,21 @@ function PrivacyPage() {
         <h2>Privacy Policy</h2>
         <p>Last updated: April 25, 2026</p>
         <p>
-          We value your privacy. We may collect website usage analytics, contact form submissions, and essential cookies
-          to improve our services and user experience.
+          We value your privacy. We may collect website usage analytics, contact
+          form submissions, and essential cookies to improve our services and
+          user experience.
         </p>
         <p>
-          We do not sell your personal data. Data is used only for communication, security, and compliance purposes.
+          We do not sell your personal data. Data is used only for
+          communication, security, and compliance purposes.
         </p>
         <p>
-          You may request data access, correction, or deletion at any time by emailing support@cryptoacademy.com.
+          You may request data access, correction, or deletion at any time by
+          emailing support@cryptoacademy.com.
         </p>
       </section>
     </Layout>
-  )
+  );
 }
 
 function TermsPage() {
@@ -150,18 +164,22 @@ function TermsPage() {
         <h2>Terms & Conditions</h2>
         <p>Last updated: April 25, 2026</p>
         <p>
-          By using this website, you agree that all content is provided for educational purposes only. We are not liable
-          for direct or indirect financial losses related to third-party platforms or investment decisions.
+          By using this website, you agree that all content is provided for
+          educational purposes only. We are not liable for direct or indirect
+          financial losses related to third-party platforms or investment
+          decisions.
         </p>
         <p>
-          You may not copy, redistribute, or commercially use website content without prior written permission.
+          You may not copy, redistribute, or commercially use website content
+          without prior written permission.
         </p>
         <p>
-          We may update these terms from time to time. The latest version will always be published on this page.
+          We may update these terms from time to time. The latest version will
+          always be published on this page.
         </p>
       </section>
     </Layout>
-  )
+  );
 }
 
 function App() {
@@ -175,7 +193,7 @@ function App() {
         <Route path="/terms-and-conditions" element={<TermsPage />} />
       </Routes>
     </HashRouter>
-  )
+  );
 }
 
-export default App
+export default App;
