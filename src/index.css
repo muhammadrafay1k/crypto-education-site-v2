@@ -161,6 +161,20 @@ main {
   border-color: #f2d27a;
 }
 
+.anti-advice-disclaimer {
+  background: linear-gradient(130deg, #ffe0cc, #ffc7aa);
+  border: 2px solid #d46a2d;
+  color: #5b260e;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.anti-advice-disclaimer strong {
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
 .page-block ul {
   margin: 8px 0 0;
   padding-left: 18px;

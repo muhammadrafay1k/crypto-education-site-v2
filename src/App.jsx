@@ -85,10 +85,12 @@ function HomePage() {
         ))}
       </section>
 
-      <section className="info-banner">
-        <strong>Important Note:</strong> All content is for educational purposes
-        only and does not constitute financial advice. Always do your own
-        research before investing.
+      <section className="info-banner anti-advice-disclaimer">
+        <strong>Disclaimer:</strong> cryptoeducation.uk is a strictly
+        educational platform. We do not provide investment, tax, or legal
+        advice. Trading cryptocurrencies involves significant risk of loss.
+        Always consult with a licensed financial advisor before making
+        investment decisions.
       </section>
     </Layout>
   );
