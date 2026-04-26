@@ -2,12 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>crypto-edu-site</title>
+    <meta
+      name="description"
+      content="Crypto Academy - Free educational content for crypto basics, trading fundamentals, and security awareness."
+    />
+    <link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Crypto Academy</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="site-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Crypto Education Platform</p>
+          <h1>Crypto Academy</h1>
+        </div>
+        <nav id="main-nav">
+          <a class="nav-link nav-link-active" href="./index.html">Home</a>
+          <a class="nav-link" href="./about.html">About Us</a>
+          <a class="nav-link" href="./contact.html">Contact</a>
+          <a class="nav-link" href="./privacy-policy.html">Privacy Policy</a>
+          <a class="nav-link" href="./terms-and-conditions.html">Terms & Conditions</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <p class="badge">Learn. Protect. Grow.</p>
+          <h2>Crypto Education Guide 2026</h2>
+          <p>
+            Learn the fundamentals of digital assets and blockchain technology.
+            Access our free comprehensive US learning module today.
+          </p>
+        </section>
+
+        <section class="card-grid">
+          <article class="card">
+            <h3>Crypto Basics</h3>
+            <p>Understand blockchain, wallets, and the practical difference between coins and tokens.</p>
+          </article>
+          <article class="card">
+            <h3>Trading Fundamentals</h3>
+            <p>Learn spot markets, risk-reward planning, stop-loss usage, and beginner-friendly strategies.</p>
+          </article>
+          <article class="card">
+            <h3>Security First</h3>
+            <p>Master scam prevention, seed phrase protection, and practical steps to secure your funds.</p>
+          </article>
+        </section>
+
+        <section class="info-banner anti-advice-disclaimer">
+          <strong>Disclaimer:</strong> cryptoeducation.uk is a strictly educational platform. We do not provide investment, tax, or legal advice. Trading cryptocurrencies involves significant risk of loss. Always consult with a licensed financial advisor before making investment decisions.
+        </section>
+      </main>
+
+      <footer>
+        <p id="copyright-text"></p>
+        <div class="footer-links">
+          <a href="./privacy-policy.html">Privacy Policy</a>
+          <a href="./terms-and-conditions.html">Terms & Conditions</a>
+          <a href="./contact.html">Contact Us</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>

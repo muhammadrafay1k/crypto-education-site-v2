@@ -28,10 +28,6 @@ body {
   min-height: 100vh;
 }
 
-#root {
-  min-height: 100vh;
-}
-
 .site-shell {
   max-width: 1080px;
   margin: 0 auto;
